@@ -26,6 +26,6 @@ def input_moda(df, element_id, referencia, target):
 
 productos = [x for x in df_venta['IdProducto'].unique()] # Obtengo todos los Id únicos de cada producto
 
-
+# Todos los productos iguales (mismo IdProduct) se venden al mismo Precio
 for product in productos:
     input_moda(df_venta, product, 'IdProducto', 'Precio')
